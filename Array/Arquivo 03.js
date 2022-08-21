@@ -1,12 +1,12 @@
-const arr = [1,2,3]
+const arr = [1, 2, 3];
 
-const arr2 = [4,5]
+const arr2 = [4, 5];
 
 const obj = {
-    name: 'Mary',
-    yearsOld: '28',
-    email: 'mary@gmail.com' 
-}
+  name: "Mary",
+  yearsOld: "28",
+  email: "mary@gmail.com",
+};
 
 // for (let prop in obj) {
 //     console.log(`${prop}: ${obj[prop]}`)
@@ -34,4 +34,3 @@ const obj = {
 // const [n1, ,n2] = arr //destruction method
 // console.log(n1)
 // console.log(n2)
-

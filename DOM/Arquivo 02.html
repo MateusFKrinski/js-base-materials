@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
+    <title>DOM pt2</title>
+  </head>
 
-     	<meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <div class="container">
+      <ul id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+      </ul>
+    </div>
 
-	    <title>DOM pt2</title>
+    <script>
+      const nodelist = document.querySelectorAll("#list li");
+      const collection = document
+        .getElementById("list")
+        .getElementsByTagName("li");
 
-    </head>
+      console.log(nodelist);
+      console.log(collection);
 
-    <body>
-        
-        <div class="container">
+      document.querySelector("#list").innerHTML += "<li> item 6 </li>";
 
-            <ul id="list">
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                <li>item 4</li>
-                <li>item 5</li>
-            </ul>
+      console.log(nodelist);
+      console.log(collection);
 
-        </div>
+      document.querySelector("#list").innerHTML = "";
 
-        <script>
-
-            const nodelist = document.querySelectorAll('#list li')
-            const collection = document.getElementById('list').getElementsByTagName('li')
-
-            console.log(nodelist)
-            console.log(collection)
-
-            document.querySelector('#list').innerHTML += '<li> item 6 </li>'
-
-            console.log(nodelist)
-            console.log(collection)
-
-            document.querySelector('#list').innerHTML = ''
-
-            console.log(nodelist)
-            console.log(collection)
-
-        </script>        
-
-    </body>
-
+      console.log(nodelist);
+      console.log(collection);
+    </script>
+  </body>
 </html>

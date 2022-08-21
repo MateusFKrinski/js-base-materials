@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array</title>
-</head>
-<body>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat quam
+      vel condimentum convallis. Praesent pulvinar venenatis purus,
+    </p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat quam vel condimentum convallis. Praesent pulvinar venenatis purus,</p>
-    
-    <p>a consectetur elit ultricies eget. Cras ac est eros. Aenean magna nibh, rutrum at dapibus vitae, venenatis et ligula. Sed rutrum tempus dui</p>
-    
-    <p>quis auctor. Sed ac lectus nec nibh placerat porttitor. Proin laoreet justo quis pretium facilisis. Nam lobortis est ut lorem sollicitudin, id</p>
-    
-    <p>auctor eros dictum. Nunc vel imperdiet lectus. Sed tincidunt eget turpis id blandit. Aliquam vulputate varius lacus ac euismod. Sed vel</p>
-    
+    <p>
+      a consectetur elit ultricies eget. Cras ac est eros. Aenean magna nibh,
+      rutrum at dapibus vitae, venenatis et ligula. Sed rutrum tempus dui
+    </p>
+
+    <p>
+      quis auctor. Sed ac lectus nec nibh placerat porttitor. Proin laoreet
+      justo quis pretium facilisis. Nam lobortis est ut lorem sollicitudin, id
+    </p>
+
+    <p>
+      auctor eros dictum. Nunc vel imperdiet lectus. Sed tincidunt eget turpis
+      id blandit. Aliquam vulputate varius lacus ac euismod. Sed vel
+    </p>
+
     <script>
+      const arr01 = new Array(1, 2, 3);
+      console.log(arr01);
 
-        const arr01 = new Array(1,2,3)
-        console.log(arr01)
+      const arr02 = Array.from(arr01);
+      arr02.push(4, 5);
+      console.log(arr02);
 
-        const arr02 = Array.from(arr01)
-        arr02.push(4, 5)
-        console.log(arr02)
+      const arr03 = Array.of(3);
+      console.log(arr03);
+      console.log(arr03.length);
 
-        const arr03 = Array.of(3)
-        console.log(arr03)
-        console.log(arr03.length)
-
-        const paragrafos = document.querySelectorAll('p')
-        console.log(paragrafos)
-        paragrafos.forEach(function(p, i) {
-            p.textContent = `${++i} - ${p.textContent}`
-        });
-
+      const paragrafos = document.querySelectorAll("p");
+      console.log(paragrafos);
+      paragrafos.forEach(function (p, i) {
+        p.textContent = `${++i} - ${p.textContent}`;
+      });
     </script>
-
-</body>
+  </body>
 </html>
